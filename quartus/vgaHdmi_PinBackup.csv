@@ -1,0 +1,51 @@
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+
+# Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# File: D:\ownCloud\Ecografo\FPGA\pruebas\de10nano\vgaHdmi_chip\vgaHdmi_PinBackup.csv
+# Generated on: Fri Jun 16 01:37:47 2017
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+RGBchannel[23],Output,PIN_AE8,3B,B3B_N0,PIN_AE7,2.5 V,,,,,,,,,,,,,
+RGBchannel[22],Output,PIN_AF9,3B,B3B_N0,PIN_AD10,2.5 V,,,,,,,,,,,,,
+RGBchannel[21],Output,PIN_AG6,3B,B3B_N0,PIN_AE9,2.5 V,,,,,,,,,,,,,
+RGBchannel[20],Output,PIN_AH6,3B,B3B_N0,PIN_AD5,2.5 V,,,,,,,,,,,,,
+RGBchannel[19],Output,PIN_AH5,3B,B3B_N0,PIN_D8,2.5 V,,,,,,,,,,,,,
+RGBchannel[18],Output,PIN_AH4,3B,B3B_N0,PIN_U10,2.5 V,,,,,,,,,,,,,
+RGBchannel[17],Output,PIN_AH2,3B,B3B_N0,PIN_AG6,2.5 V,,,,,,,,,,,,,
+RGBchannel[16],Output,PIN_AE4,3B,B3B_N0,PIN_T8,2.5 V,,,,,,,,,,,,,
+RGBchannel[15],Output,PIN_AF5,3B,B3B_N0,PIN_AF8,2.5 V,,,,,,,,,,,,,
+RGBchannel[14],Output,PIN_AF8,3B,B3B_N0,PIN_AE4,2.5 V,,,,,,,,,,,,,
+RGBchannel[13],Output,PIN_AF6,3B,B3B_N0,PIN_T11,2.5 V,,,,,,,,,,,,,
+RGBchannel[12],Output,PIN_AE7,3B,B3B_N0,PIN_AE11,2.5 V,,,,,,,,,,,,,
+RGBchannel[11],Output,PIN_AB4,3A,B3A_N0,PIN_E11,2.5 V,,,,,,,,,,,,,
+RGBchannel[10],Output,PIN_AE9,3B,B3B_N0,PIN_V10,2.5 V,,,,,,,,,,,,,
+RGBchannel[9],Output,PIN_Y4,3A,B3A_N0,PIN_AE8,2.5 V,,,,,,,,,,,,,
+RGBchannel[8],Output,PIN_AF10,3B,B3B_N0,PIN_AA4,2.5 V,,,,,,,,,,,,,
+RGBchannel[7],Output,PIN_Y5,3A,B3A_N0,PIN_AD11,2.5 V,,,,,,,,,,,,,
+RGBchannel[6],Output,PIN_AE11,3B,B3B_N0,PIN_AF4,2.5 V,,,,,,,,,,,,,
+RGBchannel[5],Output,PIN_AD10,3B,B3B_N0,PIN_U11,2.5 V,,,,,,,,,,,,,
+RGBchannel[4],Output,PIN_AD11,3B,B3B_N0,PIN_AF9,2.5 V,,,,,,,,,,,,,
+RGBchannel[3],Output,PIN_Y8,3A,B3A_N0,PIN_E8,2.5 V,,,,,,,,,,,,,
+RGBchannel[2],Output,PIN_W8,3A,B3A_N0,PIN_AC4,2.5 V,,,,,,,,,,,,,
+RGBchannel[1],Output,PIN_AE12,3B,B3B_N0,PIN_AF11,2.5 V,,,,,,,,,,,,,
+RGBchannel[0],Output,PIN_AD12,3B,B3B_N0,PIN_U9,2.5 V,,,,,,,,,,,,,
+clock50,Input,PIN_V11,3B,B3B_N0,PIN_V11,2.5 V,,,,,,,,,,,,,
+dataEnable,Output,PIN_AD19,4A,B4A_N0,PIN_AD4,2.5 V,,,,,,,,,,,,,
+hsync,Output,PIN_T8,3A,B3A_N0,PIN_AA11,2.5 V,,,,,,,,,,,,,
+reset,Input,PIN_AH17,4A,B4A_N0,PIN_Y11,2.5 V,,,,,,,,,,,,,
+vsync,Output,PIN_V13,4A,B4A_N0,PIN_AE6,2.5 V,,,,,,,,,,,,,

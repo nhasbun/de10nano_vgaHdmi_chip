@@ -1,0 +1,99 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 15:03:57  June 15, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		vgaHdmi_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEBA6U23I7
+set_global_assignment -name TOP_LEVEL_ENTITY TopModule
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:03:57  JUNE 15, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Active-HDL (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE src/pll/pll_25.qip
+set_global_assignment -name VERILOG_FILE src/TopModule.v
+set_location_assignment PIN_V11 -to clock50
+set_location_assignment PIN_V13 -to vsync
+set_location_assignment PIN_T8 -to hsync
+set_location_assignment PIN_AD19 -to dataEnable
+set_location_assignment PIN_AD12 -to RGBchannel[0]
+set_location_assignment PIN_AE12 -to RGBchannel[1]
+set_location_assignment PIN_W8 -to RGBchannel[2]
+set_location_assignment PIN_Y8 -to RGBchannel[3]
+set_location_assignment PIN_Y5 -to RGBchannel[7]
+set_location_assignment PIN_Y4 -to RGBchannel[9]
+set_location_assignment PIN_AB4 -to RGBchannel[11]
+set_location_assignment PIN_AD11 -to RGBchannel[4]
+set_location_assignment PIN_AF9 -to RGBchannel[22]
+set_location_assignment PIN_AE8 -to RGBchannel[23]
+set_location_assignment PIN_AD10 -to RGBchannel[5]
+set_location_assignment PIN_AE11 -to RGBchannel[6]
+set_location_assignment PIN_AF5 -to RGBchannel[15]
+set_location_assignment PIN_AF6 -to RGBchannel[13]
+set_location_assignment PIN_AF10 -to RGBchannel[8]
+set_location_assignment PIN_AE9 -to RGBchannel[10]
+set_location_assignment PIN_AE7 -to RGBchannel[12]
+set_location_assignment PIN_AF8 -to RGBchannel[14]
+set_location_assignment PIN_AE4 -to RGBchannel[16]
+set_location_assignment PIN_AH2 -to RGBchannel[17]
+set_location_assignment PIN_AH4 -to RGBchannel[18]
+set_location_assignment PIN_AH5 -to RGBchannel[19]
+set_location_assignment PIN_AH6 -to RGBchannel[20]
+set_location_assignment PIN_AG6 -to RGBchannel[21]
+set_location_assignment PIN_AG5 -to vgaClock
+set_location_assignment PIN_AH17 -to reset_n
+set_location_assignment PIN_AA4 -to I2C_SDAT
+set_location_assignment PIN_U10 -to I2C_SCLK
+set_location_assignment PIN_AF11 -to HDMI_TX_INT
+set_location_assignment PIN_W15 -to READY
+set_location_assignment PIN_Y24 -to switchR
+set_location_assignment PIN_W24 -to switchG
+set_location_assignment PIN_W21 -to switchB
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
