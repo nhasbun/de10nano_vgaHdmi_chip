@@ -1,0 +1,125 @@
+##########
+BUS DEFAULT NAME
+BUS
+##########
+BUS DEFAULT TYPE
+STD_LOGIC_VECTOR
+##########
+BUS GLOBAL CONNECTOR
+GlobalBus
+##########
+BUS INDEX END
+0
+##########
+BUS INDEX START
+7
+##########
+BUS TERMINAL BUFFER
+BusBuffer
+##########
+BUS TERMINAL IN
+BusInput
+##########
+BUS TERMINAL INOUT
+BusBidirectional
+##########
+BUS TERMINAL OUT
+BusOutput
+##########
+CHECK DIAGRAM
+YES
+##########
+DEFAULT BDE LANGUAGE
+VERILOG
+##########
+FILE HEADER
+--
+-- file <GENERATEDFILE>
+-- generated <TIME>
+-- from <SOURCEFILE>
+-- by <GENERATORVERSION>
+--
+##########
+GLOBAL CONNECTOR
+Global
+##########
+GND DEFAULT TYPE
+STD_LOGIC
+##########
+GND DEFAULT VALUE
+'0'
+##########
+HANGING WIRE DEFAULT TYPE
+STD_LOGIC
+##########
+HANGING WIRE DEFAULT VALUE
+'Z'
+##########
+INCLUDE ACTIVE LIBRARY CLAUSE
+0
+##########
+INCREMENT NET FACTOR
+1
+##########
+INCREMENT NET START
+0
+##########
+INCREMENT NETS
+0
+##########
+LIBRARIES
+library IEEE;
+use IEEE.std_logic_1164.all;
+##########
+TERMINAL BUFFER
+Buffer
+##########
+TERMINAL IN
+Input
+##########
+TERMINAL INOUT
+Bidirectional
+##########
+TERMINAL OUT
+Output
+##########
+USE GLOBAL DEFAULTS
+1
+##########
+VCC DEFAULT TYPE
+STD_LOGIC
+##########
+VCC DEFAULT VALUE
+'1'
+##########
+VERILOG DANGLING DEFAULT VALUE
+1'bZ
+##########
+VERILOG DESIGN UNIT HEADER
+`timescale 1ps / 1ps
+##########
+VERILOG FILE HEADER
+//
+// file <GENERATEDFILE>
+// generated <TIME>
+// from <SOURCEFILE>
+// by <GENERATORVERSION>
+//
+##########
+VERILOG GND DEFAULT TYPE
+supply0
+##########
+VERILOG GND DEFAULT VALUE
+1'b0
+##########
+VERILOG VCC DEFAULT TYPE
+supply1
+##########
+VERILOG VCC DEFAULT VALUE
+1'b1
+##########
+WIRE DEFAULT NAME
+NET
+##########
+WIRE DEFAULT TYPE
+STD_LOGIC

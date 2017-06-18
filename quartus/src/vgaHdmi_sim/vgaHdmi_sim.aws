@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+vgahdmi_sim=.\vgaHdmi_sim\vgaHdmi_sim.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+vgahdmi_sim=1

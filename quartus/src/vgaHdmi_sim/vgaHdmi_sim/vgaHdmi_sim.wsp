@@ -1,0 +1,30 @@
+[General]
+CurrentVersion=103
+[COMPILESTATUS|.\src\vgaHdmi.v]
+FileTimeLow=30598668
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\VGAhandler_TB.v]
+FileTimeLow=30598670
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\VGAhandler_TB_runtest.do]
+FileTimeLow=30598671
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\temp.do]
+FileTimeLow=30599289
+Status=Modified
+[COMPILESTATUS|.\..\..\vgaHdmi.v]
+FileTimeLow=30599300
+Status=Compiled
+[CACHEDOC|Aldec.Project.Generic.7|.\vgaHdmi_sim\vgaHdmi_sim.adf|]
+Path=/vgaHdmi_tb
+[COMPILESTATUS|.\src\wave.asdb]
+FileTimeLow=30598897
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\vgaHdmi_TB.v]
+FileTimeLow=30599303
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\vgaHdmi_TB_runtest.do]
+FileTimeLow=30599303
+Status=Modified
+[Gui config]
+RunFor=100 ns
