@@ -1,6 +1,6 @@
 SetActiveLib -work
 #Compiling UUT module design files
-comp -include d:\ownCloud\Ecografo\FPGA\pruebas\de10nano\vgaHdmi_chip\src\vgaHdmi.v
+comp -include "$dsn\..\..\vgaHdmi.v"
 comp -include "$dsn\src\TestBench\vgaHdmi_TB.v"
 asim +access +r vgaHdmi_tb
 

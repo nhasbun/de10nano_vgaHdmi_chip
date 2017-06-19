@@ -18,13 +18,13 @@ Status=Compiled
 [CACHEDOC|Aldec.Project.Generic.7|.\vgaHdmi_sim\vgaHdmi_sim.adf|]
 Path=/vgaHdmi_tb
 [COMPILESTATUS|.\src\wave.asdb]
-FileTimeLow=30598897
+FileTimeLow=30599303
 Status=Modified
 [COMPILESTATUS|.\src\TestBench\vgaHdmi_TB.v]
 FileTimeLow=30599303
 Status=Compiled
 [COMPILESTATUS|.\src\TestBench\vgaHdmi_TB_runtest.do]
-FileTimeLow=30599303
+FileTimeLow=30599336
 Status=Modified
 [Gui config]
 RunFor=100 ns
