@@ -2,7 +2,7 @@
 
 This is a test for the **ADV7513** chip from Analog Devices which is pretty useful to make an easy compatible **HDMI 1.4** output starting with a common **VGA module**.
 
-It is tested on a **de10 nano** board which has the chip included. **Quartus Prime 17** project is included for an easy deploy of a first working video signal. The project includes:
+It is tested on a **de10 nano** board which has the chip included. **Quartus Prime 17** project is included for an easy deployment of a first working video signal. The project includes:
 
 - Verilog HDL files
 - SDC TimeQuest files por timing analysis
@@ -12,6 +12,17 @@ There is a folder included under **./src/** with simulations done on **Active HD
 
 ## I2C Controller ##
 
-The chip needs to be configured via i2c on **every start** to start working. I re-used Verilog code included in some Terasic examples for this board to accomplish this.
+The chip needs to be configured via i2c on **every start** to work correctly. I re-used Verilog code included in some Terasic examples for this board to accomplish this.
 
-I found this to be the only tricky part for an smooth vga to hdmi implementation. 
+I found this to be the only tricky part for an smooth vga to hdmi implementation.
+
+## Test ##
+
+Switches of **de10 nano** are being used to control output screen color.
+
+- SW0, Red
+- SW1, Green
+- SW2, Blue
+
+
+
