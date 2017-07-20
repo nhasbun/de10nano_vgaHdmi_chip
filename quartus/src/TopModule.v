@@ -24,20 +24,33 @@ module TopModule(
   input switchR, switchG, switchB,
   
   // **inout**
-  inout I2C_SDAT,
+  inout HDMI_I2C_SDA, // HDMI i2c data
   
   // **output**
-  output hsync, vsync,
-  output dataEnable,
-  output vgaClock,
-  output [23:0] RGBchannel,
-  output I2C_SCLK, READY
+  // HDMI VIDEO
+  output HDMI_TX_HS, HDMI_TX_VS, // hscyns, vsync
+  output HDMI_TX_DE,             // dataEnable
+  output HDMI_TX_CLK,            // vgaClock
+  output [23:0] HDMI_TX_D,       // RGBchannel
+  output HDMI_I2C_SCL,           // HDMI i2c clock
+  output READY,                  // HDMI is ready signal
+  // HDMI audio interface
+  output HDMI_I2S0,  // dont care, no se usan  
+  output HDMI_MCLK,  // dont care, no se usan  
+  output HDMI_LRCLK, // dont care, no se usan  
+  output HDMI_SCLK   // dont care, no se usan 
   );
 
 wire clock25, locked;
 wire reset;
 assign reset = ~reset_n; //
 // reset de placa presionado funciona con logica negativa
+
+// señales de audio en alta impedancia
+assign HDMI_I2S0  = 1'b z;
+assign HDMI_MCLK  = 1'b z;
+assign HDMI_LRCLK = 1'b z;
+assign HDMI_SCLK  = 1'b z;
 
 // **VGA CLOCK**
 pll_25 pll_25(
@@ -54,16 +67,16 @@ vgaHdmi vgaHdmi (
   .clock      (clock25),
   .clock50    (clock50),
   .reset      (~locked),
-  .hsync      (hsync),
-  .vsync      (vsync),
+  .hsync      (HDMI_TX_HS),
+  .vsync      (HDMI_TX_VS),
   .switchR    (switchR),
   .switchG    (switchG),
   .switchB    (switchB),
 
   // output
-  .dataEnable (dataEnable),
-  .vgaClock   (vgaClock),
-  .RGBchannel (RGBchannel)
+  .dataEnable (HDMI_TX_DE),
+  .vgaClock   (HDMI_TX_CLK),
+  .RGBchannel (HDMI_TX_D)
 );
 
 // **I2C Interface for ADV7513 initial config**
@@ -75,8 +88,8 @@ I2C_HDMI_Config #(
   I2C_HDMI_Config (
   .iCLK        (clock50),
   .iRST_N      (reset_n),
-  .I2C_SCLK    (I2C_SCLK),
-  .I2C_SDAT    (I2C_SDAT),
+  .I2C_SCLK    (HDMI_I2C_SCL),
+  .I2C_SDAT    (HDMI_I2C_SDA),
   .HDMI_TX_INT (HDMI_TX_INT),
   .READY       (READY)
 );
