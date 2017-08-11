@@ -20,25 +20,32 @@ Editor : sublime text3, tab size (2)
 module TopModule(
   // **input**
   input clock50, reset_n,
-  input HDMI_TX_INT,
   input switchR, switchG, switchB,
-  
-  // **inout**
-  inout HDMI_I2C_SDA, // HDMI i2c data
-  
-  // **output**
-  // HDMI VIDEO
-  output HDMI_TX_HS, HDMI_TX_VS, // hscyns, vsync
-  output HDMI_TX_DE,             // dataEnable
-  output HDMI_TX_CLK,            // vgaClock
-  output [23:0] HDMI_TX_D,       // RGBchannel
-  output HDMI_I2C_SCL,           // HDMI i2c clock
-  output READY,                  // HDMI is ready signal
-  // HDMI audio interface
-  output HDMI_I2S0,  // dont care, no se usan  
-  output HDMI_MCLK,  // dont care, no se usan  
-  output HDMI_LRCLK, // dont care, no se usan  
-  output HDMI_SCLK   // dont care, no se usan 
+
+  // ********************************** //
+  // ** HDMI CONNECTIONS **
+
+  // AUDIO
+  // SPDIF va desconectado
+  output HDMI_I2S0,  // dont care, no se usan
+  output HDMI_MCLK,  // dont care, no se usan
+  output HDMI_LRCLK, // dont care, no se usan
+  output HDMI_SCLK,   // dont care, no se usan
+
+  // VIDEO
+  output [23:0] HDMI_TX_D, // RGBchannel
+  output HDMI_TX_VS,  // vsync
+  output HDMI_TX_HS,  // hsync
+  output HDMI_TX_DE,  // dataEnable
+  output HDMI_TX_CLK, // vgaClock
+
+  // REGISTERS AND CONFIG LOGIC
+  // HPD viene del conector
+  input HDMI_TX_INT,
+  inout HDMI_I2C_SDA,  // HDMI i2c data
+  output HDMI_I2C_SCL, // HDMI i2c clock
+  output READY        // HDMI is ready signal from i2c module
+  // ********************************** //
   );
 
 wire clock25, locked;
@@ -84,7 +91,7 @@ I2C_HDMI_Config #(
   .CLK_Freq (50000000), // trabajamos con reloj de 50MHz
   .I2C_Freq (20000)    // reloj de 20kHz for i2c clock
   )
-  
+
   I2C_HDMI_Config (
   .iCLK        (clock50),
   .iRST_N      (reset_n),
